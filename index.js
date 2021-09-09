@@ -60,7 +60,7 @@ module.exports = {
         "require-await": "off",
         "@typescript-eslint/require-await": "error",
         quotes: "off",
-        "@typescript-eslint/quotes": ["error", "double"],
+        "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
         indent: [
             "error",
             4,
