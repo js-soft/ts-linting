@@ -87,7 +87,7 @@ module.exports = {
             "error",
             120,
             {
-                ignorePattern: "^import",
+                ignorePattern: "(^import)|(^\\s+// TODO:)",
                 ignoreTemplateLiterals: true,
                 ignoreStrings: true,
                 ignoreRegExpLiterals: true,
@@ -109,6 +109,7 @@ module.exports = {
                 asyncArrow: "always"
             }
         ],
-        "no-invalid-this": "off"
+        "no-invalid-this": "off",
+        "quote-props": ["error", "as-needed"]
     }
 }
