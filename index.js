@@ -100,6 +100,15 @@ module.exports = {
         "valid-jsdoc": "off",
         "brace-style": "off",
         "guard-for-in": "off",
-        "operator-linebreak": ["error", "after", { overrides: { "?": "before", ":": "before" } }]
+        "operator-linebreak": ["error", "after", { overrides: { "?": "before", ":": "before" } }],
+        "space-before-function-paren": [
+            "error",
+            {
+                anonymous: "always",
+                named: "never",
+                asyncArrow: "always"
+            }
+        ],
+        "no-invalid-this": "off"
     }
 }
