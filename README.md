@@ -10,7 +10,7 @@ $ npm install --save-dev eslint @js-soft/eslint-config-ts
 
 ## Usage
 
-Once the `@js-soft/eslint-config-ts` package is installed, you can use it by specifying `@js-soft/ts` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+Once the `@js-soft/eslint-config-ts` package is installed, you can use it by specifying `@js-soft/ts` in the [`extends`](https://eslint.org/docs/user-guide/configuring/configuration-files#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
 ```json
 {
