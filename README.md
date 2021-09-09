@@ -1,20 +1,20 @@
-# @js-soft/ts-linting
+# @js-soft/eslint-config-ts
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for j&s-soft Projects
 
 ## Installation
 
 ```
-$ npm install --save-dev eslint @js-soft/ts-linting
+$ npm install --save-dev eslint @js-soft/eslint-config-ts
 ```
 
 ## Usage
 
-Once the `@js-soft/ts-linting` package is installed, you can use it by specifying `@js-soft/ts-linting` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+Once the `@js-soft/eslint-config-ts` package is installed, you can use it by specifying `@js-soft/ts` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
 ```json
 {
-    "extends": "@js-soft/ts-linting",
+    "extends": "@js-soft/ts",
     "rules": {
         // Additional, per-project rules...
     }
