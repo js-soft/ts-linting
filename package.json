@@ -1,5 +1,5 @@
 {
-    "name": "@js-soft/ts-linting",
+    "name": "@js-soft/eslint-config-ts",
     "version": "1.0.0",
     "description": "j&s-soft typescript linting rules",
     "license": "MIT",
@@ -12,5 +12,11 @@
         "@typescript-eslint/eslint-plugin": "^4.31.0",
         "@typescript-eslint/parser": "^4.31.0",
         "eslint-config-google": "^0.14.0"
+    },
+    "peerDependencies": {
+        "eslint": ">= 3"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
