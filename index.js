@@ -69,7 +69,13 @@ module.exports = {
         ],
         "@typescript-eslint/no-empty-function": "error",
         "no-empty-function": "off",
-        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                selector: "enumMember",
+                format: ["PascalCase"]
+            }
+        ],
         indent: [
             "error",
             4,
