@@ -56,7 +56,7 @@ module.exports = {
         "@typescript-eslint/require-array-sort-compare": ["error", { ignoreStringArrays: true }],
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
         "@typescript-eslint/return-await": ["error", "always"],
-        "no-return-await": "off",
+        "return-await": "off",
         "require-await": "off",
         "@typescript-eslint/require-await": "error",
         quotes: "off",
@@ -67,6 +67,9 @@ module.exports = {
                 allowArgumentsExplicitlyTypedAsAny: true
             }
         ],
+        "@typescript-eslint/no-empty-function": "error",
+        "no-empty-function": "off",
+        "@typescript-eslint/naming-convention": "error",
         indent: [
             "error",
             4,
@@ -117,6 +120,6 @@ module.exports = {
         ],
         "no-invalid-this": "off",
         "quote-props": ["error", "as-needed"],
-        "no-empty-function": "error"
+        "new-cap": "off"
     }
 }
