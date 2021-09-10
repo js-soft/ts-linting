@@ -126,6 +126,7 @@ module.exports = {
         ],
         "no-invalid-this": "off",
         "quote-props": ["error", "as-needed"],
-        "new-cap": "off"
+        "new-cap": "off",
+        camelcase: "off"
     }
 }
