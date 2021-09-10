@@ -61,6 +61,12 @@ module.exports = {
         "@typescript-eslint/require-await": "error",
         quotes: "off",
         "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
+        "@typescript-eslint/explicit-module-boundary-types": [
+            "error",
+            {
+                allowArgumentsExplicitlyTypedAsAny: true
+            }
+        ],
         indent: [
             "error",
             4,
@@ -110,6 +116,7 @@ module.exports = {
             }
         ],
         "no-invalid-this": "off",
-        "quote-props": ["error", "as-needed"]
+        "quote-props": ["error", "as-needed"],
+        "no-empty-functions": "error"
     }
 }
