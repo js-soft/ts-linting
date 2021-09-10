@@ -117,6 +117,6 @@ module.exports = {
         ],
         "no-invalid-this": "off",
         "quote-props": ["error", "as-needed"],
-        "no-empty-functions": "error"
+        "no-empty-function": "error"
     }
 }
