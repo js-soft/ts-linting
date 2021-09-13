@@ -5,7 +5,6 @@ module.exports = {
         browser: true,
         es2021: true
     },
-    extends: ["google"],
     parser: "@typescript-eslint/parser",
     parserOptions: {
         project: "tsconfig.json",
@@ -15,7 +14,6 @@ module.exports = {
     plugins: ["@typescript-eslint"],
     rules: {
         "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-        "no-unused-vars": "off",
         "@typescript-eslint/no-floating-promises": "error",
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": [
@@ -56,8 +54,6 @@ module.exports = {
         "@typescript-eslint/require-array-sort-compare": ["error", { ignoreStringArrays: true }],
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
         "@typescript-eslint/return-await": ["error", "always"],
-        "return-await": "off",
-        "require-await": "off",
         "@typescript-eslint/require-await": "error",
         quotes: "off",
         "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
@@ -68,7 +64,6 @@ module.exports = {
             }
         ],
         "@typescript-eslint/no-empty-function": "error",
-        "no-empty-function": "off",
         "@typescript-eslint/naming-convention": [
             "error",
             {
@@ -76,57 +71,38 @@ module.exports = {
                 format: ["PascalCase"]
             }
         ],
-        indent: [
-            "error",
-            4,
-            {
-                CallExpression: {
-                    arguments: 1
-                },
-                FunctionDeclaration: {
-                    body: 1,
-                    parameters: 1
-                },
-                FunctionExpression: {
-                    body: 1,
-                    parameters: 1
-                },
-                MemberExpression: 1,
-                ObjectExpression: 1,
-                SwitchCase: 1,
-                ignoredNodes: ["ConditionalExpression"]
-            }
-        ],
-        semi: "off",
-        "max-len": [
-            "error",
-            120,
-            {
-                ignorePattern: "(^import)|(^\\s+// TODO:)",
-                ignoreTemplateLiterals: true,
-                ignoreStrings: true,
-                ignoreRegExpLiterals: true,
-                ignoreTrailingComments: true
-            }
-        ],
-        "comma-dangle": "off",
-        "require-jsdoc": "off",
-        "object-curly-spacing": ["error", "always"],
-        "valid-jsdoc": "off",
-        "brace-style": "off",
-        "guard-for-in": "off",
-        "operator-linebreak": ["error", "after", { overrides: { "?": "before", ":": "before" } }],
-        "space-before-function-paren": [
-            "error",
-            {
-                anonymous: "always",
-                named: "never",
-                asyncArrow: "always"
-            }
-        ],
-        "no-invalid-this": "off",
+        "no-caller": "error",
         "quote-props": ["error", "as-needed"],
-        "new-cap": "off",
-        camelcase: "off"
+        "no-extend-native": "error",
+        "no-extra-bind": "error",
+        "no-new-object": "error",
+        "no-new-wrappers": "error",
+        "no-throw-literal": "error",
+        "no-with": "error",
+        "prefer-promise-reject-errors": "error",
+        "no-array-constructor": "error",
+        camelcase: "off",
+        "no-multi-str": "error",
+        "one-var": [
+            "error",
+            {
+                var: "never",
+                let: "never",
+                const: "never"
+            }
+        ],
+        "spaced-comment": ["error", "always"],
+        "constructor-super": "error",
+        "generator-star-spacing": ["error", "after"],
+        "no-new-symbol": "error",
+        "no-this-before-super": "error",
+        "no-var": "error",
+        "prefer-const": ["error", { destructuring: "all" }],
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        curly: ["error", "multi-line"],
+        indent: "off",
+        semi: "off",
+        "yield-star-spacing": "off"
     }
 }
