@@ -5,12 +5,7 @@ module.exports = {
     reportUnusedDisableDirectives: true,
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
-        "jest/expect-expect": [
-            "error",
-            {
-                assertFunctionNames: ["expect", "*.executeTests", "expectSuccess", "expectError"]
-            }
-        ],
+        "jest/expect-expect": "error",
         "jest/lowercase-name": "error",
         "jest/max-nested-describe": ["error", { max: 2 }],
         "jest/no-alias-methods": "error",

@@ -18,6 +18,8 @@ module.exports = {
         "mocha/valid-suite-description": ["error", "^[a-z]"],
         "mocha/valid-test-description": ["error", "^[a-z]"],
         "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
+        "jest/no-commented-out-tests": "error",
+        "jest/expect-expect": "error",
         "chai-expect/no-inner-compare": "error",
         "chai-expect/no-inner-literal": "error",
         "chai-expect/missing-assertion": "error",
