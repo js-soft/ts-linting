@@ -1,17 +1,19 @@
 {
     "name": "@js-soft/eslint-config-ts",
-    "version": "1.0.13",
+    "version": "1.1.0",
     "description": "j&s-soft typescript linting rules",
     "license": "MIT",
     "author": "js-soft GmbH",
     "main": "index.js",
     "files": [
         "index.js",
-        "with-formatting/*"
+        "with-formatting/*",
+        "jest/*"
     ],
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^4.31.0",
-        "@typescript-eslint/parser": "^4.31.0"
+        "@typescript-eslint/parser": "^4.31.0",
+        "eslint-plugin-jest": "^24.4.0"
     },
     "peerDependencies": {
         "eslint": ">= 3"
