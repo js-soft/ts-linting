@@ -83,6 +83,11 @@ module.exports = {
             {
                 selector: "enumMember",
                 format: ["PascalCase"]
+            },
+            {
+                selector: "classProperty",
+                format: ["camelCase", "UPPER_CASE"],
+                leadingUnderscore: "allow"
             }
         ],
         "no-caller": "error",
