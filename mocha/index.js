@@ -1,7 +1,7 @@
 "use strict"
 
 module.exports = {
-    plugins: ["mocha", "jest"],
+    plugins: ["mocha", "jest", "chai-expect"],
     reportUnusedDisableDirectives: true,
     rules: {
         "mocha/no-async-describe": "error",
@@ -17,8 +17,8 @@ module.exports = {
         "mocha/no-sibling-hooks": "error",
         "mocha/no-skipped-tests": "error",
         "mocha/no-synchronous-tests": "error",
-        "mocha/valid-suite-description": ["warn", "^[a-z]"],
-        "mocha/valid-test-description": ["warn", "^[a-z]"],
+        "mocha/valid-suite-description": ["error", "^[a-z]"],
+        "mocha/valid-test-description": ["error", "^[a-z]"],
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "chai-expect/no-inner-compare": "error",
         "chai-expect/no-inner-literal": "error",
