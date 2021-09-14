@@ -2,6 +2,7 @@
 
 module.exports = {
     plugins: ["jest"],
+    reportUnusedDisableDirectives: true,
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": [

@@ -11,6 +11,7 @@ module.exports = {
         ecmaVersion: 12,
         sourceType: "module"
     },
+    reportUnusedDisableDirectives: true,
     plugins: ["@typescript-eslint"],
     rules: {
         "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
