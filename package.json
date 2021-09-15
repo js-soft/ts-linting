@@ -11,6 +11,9 @@
         "jest/*",
         "mocha/*"
     ],
+    "scripts": {
+        "test": "cd test && npx eslint index.ts && cd .."
+    },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^4.31.0",
         "@typescript-eslint/parser": "^4.31.0",
