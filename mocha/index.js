@@ -15,7 +15,7 @@ module.exports = {
         "mocha/no-return-from-async": "error",
         "mocha/no-sibling-hooks": "error",
         "mocha/no-skipped-tests": "error",
-        "mocha/valid-suite-description": ["error", "^[a-z]"],
+        "mocha/valid-suite-description": ["error", "^[A-Z]"],
         "mocha/valid-test-description": ["error", "^[a-z]"],
         "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
         "jest/no-commented-out-tests": "error",

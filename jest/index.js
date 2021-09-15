@@ -6,7 +6,7 @@ module.exports = {
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": "error",
-        "jest/lowercase-name": "error",
+        "jest/lowercase-name": ["error", { "ignore": ["describe"] }],
         "jest/max-nested-describe": ["error", { max: 2 }],
         "jest/no-alias-methods": "error",
         "jest/no-commented-out-tests": "error",
