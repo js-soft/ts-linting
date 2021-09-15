@@ -36,6 +36,5 @@ module.exports = {
         "jest/valid-describe": "error",
         "jest/valid-expect": ["error", { alwaysAwait: true, minArgs: 1, maxArgs: 2 }],
         "jest/valid-expect-in-promise": "error",
-        "jest/valid-title": "error"
     }
 }
