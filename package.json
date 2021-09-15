@@ -1,7 +1,11 @@
 {
     "name": "@js-soft/eslint-config-ts",
-    "version": "1.2.11",
+    "version": "1.2.12",
     "description": "j&s-soft typescript linting rules",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/js-soft/ts-linting.git"
+    },
     "license": "MIT",
     "author": "js-soft GmbH",
     "main": "index.js",
@@ -11,6 +15,9 @@
         "jest/*",
         "mocha/*"
     ],
+    "scripts": {
+        "test": "cd test && npx eslint index.ts && cd .."
+    },
     "dependencies": {
         "@typescript-eslint/eslint-plugin": "^4.31.0",
         "@typescript-eslint/parser": "^4.31.0",
