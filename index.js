@@ -92,7 +92,6 @@ module.exports = {
             }
         ],
         "no-caller": "error",
-        "quote-props": ["error", "as-needed"],
         "no-extend-native": "error",
         "no-extra-bind": "error",
         "no-new-object": "error",
@@ -113,7 +112,6 @@ module.exports = {
         ],
         "spaced-comment": ["error", "always"],
         "constructor-super": "error",
-        "generator-star-spacing": ["error", "after"],
         "no-new-symbol": "error",
         "no-this-before-super": "error",
         "no-var": "error",

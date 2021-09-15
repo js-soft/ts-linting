@@ -70,6 +70,7 @@ module.exports = {
         "switch-colon-spacing": "error",
         "arrow-parens": ["error", "always"],
         "rest-spread-spacing": "error",
-        "yield-star-spacing": ["error", "after"]
+        "yield-star-spacing": ["error", "after"],
+        "generator-star-spacing": ["error", "after"]
     }
 }
