@@ -1,4 +1,4 @@
-name: Test Eslint config
+name: Test ESLint config
 
 on: pull_request
 
