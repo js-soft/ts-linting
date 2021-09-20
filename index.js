@@ -151,7 +151,6 @@ module.exports = {
         "no-alert": "error",
         "no-constructor-return": "error",
         "no-else-return": "error",
-        "no-eq-null": "error",
         "no-eval": "error",
         "no-extra-label": "error",
         "no-implied-eval": "error",
