@@ -1,7 +1,7 @@
 "use strict"
 
 module.exports = {
-    plugins: ["mocha", "jest", "chai-expect"],
+    plugins: ["mocha", "jest", "chai-expect", "chai-friendly"],
     reportUnusedDisableDirectives: true,
     rules: {
         "mocha/no-async-describe": "error",
@@ -24,6 +24,7 @@ module.exports = {
         "chai-expect/no-inner-literal": "error",
         "chai-expect/missing-assertion": "error",
         "chai-expect/terminating-properties": "error",
+        "no-unused-expressions": "off",
         "chai-friendly/no-unused-expressions": "error"
     }
 }
