@@ -149,7 +149,6 @@ module.exports = {
         "eqeqeq": "error",
         "grouped-accessor-pairs": "error",
         "no-alert": "error",
-        "no-case-declarations": "error",
         "no-constructor-return": "error",
         "no-else-return": "error",
         "no-eq-null": "error",
