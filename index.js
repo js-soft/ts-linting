@@ -56,7 +56,7 @@ module.exports = {
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
         "@typescript-eslint/return-await": ["error", "always"],
         "@typescript-eslint/require-await": "error",
-        "no-useless-constructor":"error",
+        "no-useless-constructor":"off",
         "@typescript-eslint/no-useless-constructor": "error",
         quotes: "off",
         "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
