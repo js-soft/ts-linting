@@ -171,13 +171,6 @@ module.exports = {
         "no-void": "error",
         "yoda": "error",
         "no-unused-expressions": "error",
-        "capitalized-comments": [
-            "error",
-            "always",
-            {
-                "ignoreConsecutiveComments": true
-            }
-        ],
         "no-lonely-if": "error",
         "no-duplicate-imports": "error",
         "no-useless-rename": "error",
