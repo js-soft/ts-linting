@@ -6,7 +6,7 @@ module.exports = {
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": "error",
-        "jest/valid-title": ["error", { "mustMatch": { "describe": "^[A-Z]", "it": "^[a-z]", "test": "^[a-z]" } }],
+        "jest/valid-title": ["error", { mustMatch: { describe: "^[A-Z]", it: "^[a-z]", test: "^[a-z]" } }],
         "jest/max-nested-describe": ["error", { max: 2 }],
         "jest/no-alias-methods": "error",
         "jest/no-commented-out-tests": "error",
@@ -27,14 +27,13 @@ module.exports = {
         "jest/prefer-hooks-on-top": "error",
         "jest/prefer-spy-on": "error",
         "jest/prefer-strict-equal": "error",
-        "jest/prefer-to-be-null": "error",
-        "jest/prefer-to-be-undefined": "error",
+        "jest/prefer-to-be": "error",
         "jest/prefer-to-contain": "error",
         "jest/prefer-to-have-length": "error",
         "jest/prefer-todo": "error",
         "jest/require-to-throw-message": "error",
-        "jest/valid-describe": "error",
+        "jest/valid-describe-callback": "error",
         "jest/valid-expect": ["error", { alwaysAwait: true, minArgs: 1, maxArgs: 2 }],
-        "jest/valid-expect-in-promise": "error",
+        "jest/valid-expect-in-promise": "error"
     }
 }
