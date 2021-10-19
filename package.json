@@ -19,11 +19,11 @@
         "test": "cd test && npx eslint index.ts && cd .."
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^4.31.1",
-        "@typescript-eslint/parser": "^4.31.1",
+        "@typescript-eslint/eslint-plugin": "^5.1.0",
+        "@typescript-eslint/parser": "^5.1.0",
         "eslint-plugin-chai-expect": "^2.2.0",
         "eslint-plugin-chai-friendly": "^0.7.2",
-        "eslint-plugin-jest": "^24.4.2",
+        "eslint-plugin-jest": "^25.2.2",
         "eslint-plugin-mocha": "^9.0.0"
     },
     "peerDependencies": {
