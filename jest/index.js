@@ -6,7 +6,6 @@ module.exports = {
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": "error",
-        "jest/valid-title": ["error", { mustMatch: { describe: "^[A-Z]", it: "^[a-z]", test: "^[a-z]" } }],
         "jest/max-nested-describe": ["error", { max: 2 }],
         "jest/no-alias-methods": "error",
         "jest/no-commented-out-tests": "error",
