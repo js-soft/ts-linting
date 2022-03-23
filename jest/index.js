@@ -6,7 +6,6 @@ module.exports = {
     rules: {
         "jest/consistent-test-it": ["warn", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": "warn",
-        "jest/valid-title": ["warn", { mustMatch: { describe: "^[A-Z]", it: "^[a-z]", test: "^[a-z]" } }],
         "jest/max-nested-describe": ["warn", { max: 2 }],
         "jest/no-alias-methods": "warn",
         "jest/no-commented-out-tests": "warn",
