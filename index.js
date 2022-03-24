@@ -56,7 +56,7 @@ module.exports = {
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
         "@typescript-eslint/return-await": ["error", "always"],
         "@typescript-eslint/require-await": "error",
-        "no-useless-constructor":"off",
+        "no-useless-constructor": "off",
         "@typescript-eslint/no-useless-constructor": "error",
         quotes: "off",
         "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
@@ -94,6 +94,18 @@ module.exports = {
                 selector: "classProperty",
                 format: ["camelCase", "UPPER_CASE"],
                 leadingUnderscore: "allow"
+            },
+            {
+                selector: "property",
+                format: null,
+                filter: {
+                    regex: "^@.+$",
+                    match: true
+                },
+                custom: {
+                    regex: "^@(type|schema|version)$",
+                    match: true
+                }
             }
         ],
         "no-caller": "error",
@@ -146,7 +158,7 @@ module.exports = {
         "valid-typeof": "error",
         "array-callback-return": "error",
         "default-case-last": "error",
-        "eqeqeq": "error",
+        eqeqeq: "error",
         "grouped-accessor-pairs": "error",
         "no-alert": "error",
         "no-constructor-return": "error",
@@ -169,7 +181,7 @@ module.exports = {
         "no-useless-concat": "error",
         "no-useless-escape": "error",
         "no-void": "error",
-        "yoda": "error",
+        yoda: "error",
         "no-unused-expressions": "error",
         "no-lonely-if": "error",
         "no-duplicate-imports": "error",
