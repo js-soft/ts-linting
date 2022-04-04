@@ -103,7 +103,7 @@ module.exports = {
                     match: true
                 },
                 custom: {
-                    regex: "^@(type|schema|version)$",
+                    regex: "^@(type|context|version)$",
                     match: true
                 }
             }
