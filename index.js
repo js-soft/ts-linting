@@ -98,12 +98,8 @@ module.exports = {
             {
                 selector: "property",
                 format: null,
-                filter: {
-                    regex: "^@.+$",
-                    match: true
-                },
                 custom: {
-                    regex: "^@(type|context|version)$",
+                    regex: "^(@type|@version|@context|(\\$?[a-z0-9]+)([A-Z][a-z0-9]*)*)(\\.(@type|@version|@context|[a-z0-9]+([A-Z][a-z0-9]*)*))*$",
                     match: true
                 }
             }
