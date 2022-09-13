@@ -1,6 +1,6 @@
 {
     "name": "@js-soft/eslint-config-ts",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "description": "j&s-soft typescript linting rules",
     "repository": {
         "type": "git",
@@ -19,12 +19,12 @@
         "test": "cd test && npx eslint index.ts && cd .."
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.30.6",
-        "@typescript-eslint/parser": "^5.30.6",
+        "@typescript-eslint/eslint-plugin": "^5.37.0",
+        "@typescript-eslint/parser": "^5.37.0",
         "eslint-plugin-chai-expect": "^3.0.0",
         "eslint-plugin-chai-friendly": "^0.7.2",
-        "eslint-plugin-jest": "^26.6.0",
-        "eslint-plugin-mocha": "^10.0.5"
+        "eslint-plugin-jest": "^27.0.4",
+        "eslint-plugin-mocha": "^10.1.0"
     },
     "peerDependencies": {
         "eslint": ">=8"
