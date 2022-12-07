@@ -1,6 +1,6 @@
 {
     "name": "@js-soft/eslint-config-ts",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "description": "j&s-soft typescript linting rules",
     "repository": {
         "type": "git",
