@@ -54,6 +54,7 @@ module.exports = {
         "@typescript-eslint/prefer-ts-expect-error": "error",
         "@typescript-eslint/require-array-sort-compare": ["error", { ignoreStringArrays: true }],
         "@typescript-eslint/switch-exhaustiveness-check": "warn",
+        "no-return-await": "off",
         "@typescript-eslint/return-await": ["error", "always"],
         "@typescript-eslint/require-await": "error",
         "no-useless-constructor": "off",
@@ -185,6 +186,5 @@ module.exports = {
         "prefer-template": "error",
         "require-yield": "error",
         "no-empty": "error",
-        "no-return-await": "off",
     }
 }
