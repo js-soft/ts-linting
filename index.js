@@ -184,6 +184,7 @@ module.exports = {
         "no-useless-rename": "error",
         "prefer-template": "error",
         "require-yield": "error",
-        "no-empty": "error"
+        "no-empty": "error",
+        "no-return-await": "off",
     }
 }
