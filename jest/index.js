@@ -17,7 +17,7 @@ module.exports = {
         "jest/no-export": "error",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
-        "jest/no-if": "error",
+        "jest/no-conditional-in-test": "error",
         "jest/no-mocks-import": "error",
         "jest/no-standalone-expect": "error",
         "jest/no-test-prefixes": "error",
