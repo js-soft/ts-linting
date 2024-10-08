@@ -53,7 +53,7 @@ module.exports = {
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/prefer-ts-expect-error": "error",
         "@typescript-eslint/require-array-sort-compare": ["error", { ignoreStringArrays: true }],
-        "@typescript-eslint/switch-exhaustiveness-check": "warn",
+        "@typescript-eslint/switch-exhaustiveness-check": "error",
         "no-return-await": "off",
         "@typescript-eslint/return-await": ["error", "always"],
         "@typescript-eslint/require-await": "error",
