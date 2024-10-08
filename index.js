@@ -59,8 +59,6 @@ module.exports = {
         "@typescript-eslint/require-await": "error",
         "no-useless-constructor": "off",
         "@typescript-eslint/no-useless-constructor": "error",
-        quotes: "off",
-        "@typescript-eslint/quotes": ["error", "double", { avoidEscape: true }],
         "@typescript-eslint/explicit-module-boundary-types": [
             "error",
             {
