@@ -6,11 +6,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: current
       - run: npm ci
-      - run: npm i eslint typescript
+      - run: npm i eslint@8 typescript
       - run: npm test
       - run: npx better-npm-audit audit
