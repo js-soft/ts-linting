@@ -19,8 +19,8 @@
         "test": "cd test && npx eslint index.ts && cd .."
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^8.8.1",
-        "@typescript-eslint/parser": "^8.8.1",
+        "@typescript-eslint/eslint-plugin": "^8.10.0",
+        "@typescript-eslint/parser": "^8.10.0",
         "eslint-plugin-chai-expect": "^3.1.0",
         "eslint-plugin-chai-friendly": "^1.0.1",
         "eslint-plugin-jest": "^28.8.3",
