@@ -3,7 +3,7 @@
     "description": "j&s-soft typescript linting rules",
     "repository": "github:js-soft/ts-linting",
     "license": "MIT",
-    "author": "js-soft GmbH",
+    "author": "j&s-soft AG",
     "main": "index.js",
     "files": [
         "index.js",
