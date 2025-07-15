@@ -4,6 +4,7 @@ import jest from "eslint-plugin-jest"
 import tseslint from "typescript-eslint"
 
 export default tseslint.config({
+    files: ["**/*.ts"],
     plugins: { jest },
     linterOptions: {
         reportUnusedDisableDirectives: true
