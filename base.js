@@ -3,10 +3,6 @@
 import tseslint from "typescript-eslint"
 
 export default tseslint.config(tseslint.configs.base, {
-    languageOptions: {
-        ecmaVersion: 12,
-        sourceType: "module"
-    },
     linterOptions: {
         reportUnusedDisableDirectives: true
     },
