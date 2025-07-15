@@ -1,6 +1,5 @@
 {
     "devDependencies": {
-        "@js-soft/eslint-config-ts": "file:../",
-        "jest": "^30.0.4"
+        "@js-soft/eslint-config-ts": "file:../"
     }
 }
