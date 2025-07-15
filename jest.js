@@ -1,8 +1,13 @@
-"use strict"
+// @ts-check
 
-module.exports = {
-    plugins: ["jest"],
-    reportUnusedDisableDirectives: true,
+import jest from "eslint-plugin-jest"
+import tseslint from "typescript-eslint"
+
+export default tseslint.config({
+    plugins: { jest },
+    linterOptions: {
+        reportUnusedDisableDirectives: true
+    },
     rules: {
         "jest/consistent-test-it": ["error", { fn: "test", withinDescribe: "test" }],
         "jest/expect-expect": "error",
@@ -34,4 +39,4 @@ module.exports = {
         "jest/valid-expect": ["error", { alwaysAwait: true, minArgs: 1, maxArgs: 2 }],
         "jest/valid-expect-in-promise": "error"
     }
-}
+})
