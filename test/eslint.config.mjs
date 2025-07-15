@@ -1,24 +1,8 @@
-import js from "@js-soft/eslint-config-ts"
+import js, { configs } from "@js-soft/eslint-config-ts"
 import tseslint from "typescript-eslint"
 
-export default tseslint.config(
-    {
-        extends: [js],
-
-        files: ["*.ts"],
-
-        settings: {
-            jest: {
-                version: 26
-            }
-        }
-    },
-    {
-        languageOptions: {
-            parserOptions: {
-                projectService: true,
-                tsconfigRootDir: import.meta.dirname
-            }
-        }
-    }
-)
+export default tseslint.config({
+    extends: [js, configs.base, configs.jest, configs.withFormatting],
+    files: ["*.ts"],
+    languageOptions: { parserOptions: { project: "./tsconfig.json" } }
+})
