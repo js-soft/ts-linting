@@ -1,8 +1,0 @@
-{
-    "extends": ["../", "../with-formatting", "../mocha", "../jest"],
-    "settings": {
-        "jest": {
-            "version": 26
-        }
-    }
-}

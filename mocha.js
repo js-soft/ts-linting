@@ -1,10 +1,19 @@
-"use strict"
+// @ts-check
 
-module.exports = {
-    plugins: ["mocha", "jest", "chai-expect", "chai-friendly"],
-    reportUnusedDisableDirectives: true,
+import chaiExpect from "eslint-plugin-chai-expect"
+import chaiFriendly from "eslint-plugin-chai-friendly"
+import jest from "eslint-plugin-jest"
+import mocha from "eslint-plugin-mocha"
+import tseslint from "typescript-eslint"
+
+export default tseslint.config({
+    files: ["**/*.ts"],
+    plugins: { mocha, jest, "chai-expect": chaiExpect, "chai-friendly": chaiFriendly },
+    linterOptions: {
+        reportUnusedDisableDirectives: true
+    },
     rules: {
-        "mocha/no-async-describe": "error",
+        "mocha/no-async-suite": "error",
         "mocha/no-exclusive-tests": "error",
         "mocha/no-global-tests": "error",
         "mocha/no-identical-title": "error",
@@ -14,7 +23,6 @@ module.exports = {
         "mocha/no-return-and-callback": "error",
         "mocha/no-return-from-async": "error",
         "mocha/no-sibling-hooks": "error",
-        "mocha/no-skipped-tests": "error",
         "jest/consistent-test-it": ["error", { fn: "it", withinDescribe: "it" }],
         "jest/no-commented-out-tests": "error",
         "jest/expect-expect": "error",
@@ -25,4 +33,4 @@ module.exports = {
         "no-unused-expressions": "off",
         "chai-friendly/no-unused-expressions": "error"
     }
-}
+})

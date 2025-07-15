@@ -1,7 +1,10 @@
-"use strict"
+// @ts-check
 
-module.exports = {
-    extends: ["../index.js"],
+import tseslint from "typescript-eslint"
+import base from "./base.js"
+
+export default tseslint.config({
+    extends: [base],
     rules: {
         indent: [
             "error",
@@ -73,4 +76,4 @@ module.exports = {
         "yield-star-spacing": ["error", "after"],
         "generator-star-spacing": ["error", "after"]
     }
-}
+})

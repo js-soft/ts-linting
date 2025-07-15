@@ -4,26 +4,30 @@
     "repository": "github:js-soft/ts-linting",
     "license": "MIT",
     "author": "j&s-soft AG",
+    "type": "module",
     "main": "index.js",
+    "types": "index.d.ts",
     "files": [
+        "base.js",
+        "index.d.ts",
         "index.js",
-        "with-formatting/*",
-        "jest/*",
-        "mocha/*"
+        "jest.js",
+        "mocha.js",
+        "withFormatting.js"
     ],
     "scripts": {
-        "test": "cd test && npx eslint index.ts && cd .."
+        "test": "cd test && npm i && npx eslint index.ts && cd .."
     },
     "dependencies": {
-        "@typescript-eslint/eslint-plugin": "^8.24.1",
-        "@typescript-eslint/parser": "^8.24.1",
+        "@eslint/js": "^9.31.0",
         "eslint-plugin-chai-expect": "^3.1.0",
-        "eslint-plugin-chai-friendly": "^1.0.1",
-        "eslint-plugin-jest": "^28.11.0",
-        "eslint-plugin-mocha": "^10.5.0"
+        "eslint-plugin-chai-friendly": "^1.1.0",
+        "eslint-plugin-jest": "^29.0.1",
+        "eslint-plugin-mocha": "^11.1.0",
+        "typescript-eslint": "^8.37.0"
     },
     "peerDependencies": {
-        "eslint": ">=8"
+        "eslint": ">=9"
     },
     "publishConfig": {
         "access": "public",
