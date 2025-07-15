@@ -9,8 +9,9 @@
     "files": [
         "index.js",
         "base.js",
-        "with-formatting.js",
-        "jest.js"
+        "withFormatting.js",
+        "jest.js",
+        "index.d.ts"
     ],
     "scripts": {
         "test": "cd test && npm i && npx eslint index.ts && cd .."
