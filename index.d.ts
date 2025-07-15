@@ -7,4 +7,4 @@ declare const withFormatting: ConfigArray
 declare const base: ConfigArray
 export default base
 
-export { base, jest, withFormatting }
+export const configs = { base, jest, withFormatting }
