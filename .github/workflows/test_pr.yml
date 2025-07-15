@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: current
       - run: npm ci
-      - run: npm i eslint@8 typescript
+      - run: npm i eslint typescript
       - run: npm test
       - run: npx better-npm-audit audit
