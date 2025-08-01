@@ -19,12 +19,12 @@
         "test": "cd test && npm i && npx eslint index.ts && cd .."
     },
     "dependencies": {
-        "@eslint/js": "^9.31.0",
+        "@eslint/js": "^9.32.0",
         "eslint-plugin-chai-expect": "^3.1.0",
         "eslint-plugin-chai-friendly": "^1.1.0",
         "eslint-plugin-jest": "^29.0.1",
         "eslint-plugin-mocha": "^11.1.0",
-        "typescript-eslint": "^8.37.0"
+        "typescript-eslint": "^8.38.0"
     },
     "peerDependencies": {
         "eslint": ">=9"
