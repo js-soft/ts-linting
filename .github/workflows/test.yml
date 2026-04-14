@@ -1,6 +1,9 @@
 name: Test ESLint config
 
-on: pull_request
+on:
+  push:
+    branches-ignore:
+      - main
 
 jobs:
   test:
